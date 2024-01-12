@@ -1,0 +1,61 @@
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#forms-container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left:12%;
+
+
+}
+
+#hotel-create,
+#guest-create,
+#room-create{
+    width: 50%;
+}
+
+#hotel-create label,
+#hotel-create input,
+#guest-create label,
+#guest-create input,
+#room-create label,
+#room-create input {
+
+    margin-bottom: 10px;
+}
+
+#hotelTable {
+    margin: 2% auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#searchHotel {
+    margin-top: 1%;
+    padding: 5px;
+    width: 20%;
+}
+
+#hotel-list-name {
+    margin-top: 2%;
+}
+
+.hotel-dropdown {
+    width: 90%;
+}

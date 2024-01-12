@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/hotel.css">
+    <title>Front Page</title>
+</head>
+<body>
+<h1>Create Hotel</h1>
+<body>
+<div id="forms-container">
+    <form id="hotel-create">
+        <h1>Create Hotel</h1>
+        <label>Name: <input type="text" id="hotel-name"/></label><br>
+        <label>Street: <input type="text" id="hotel-street"/></label><br>
+        <label>City: <input type="text" id="hotel-city"/></label><br>
+        <label>Zip: <input type="text" id="hotel-zip"/></label><br>
+        <label>Country: <input type="text" id="hotel-country"/></label><br>
+        <label>Room amount: <input type="text" id="room-amount"/></label><br>
+        <button type="button" onclick="createHotel()">Create Hotel</button>
+    </form>
+
+
+    <form id="guest-create">
+        <h1>Create Guest</h1>
+        <label>Username: <input type="text" id="guest-username"/></label><br>
+        <label>First Name: <input type="text" id="guest-firstName"/></label><br>
+        <label>Last Name: <input type="text" id="guest-lastName"/></label><br>
+        <label>Email: <input type="text" id="guest-email"/></label><br>
+        <label>Phone Number: <input type="text" id="guest-phoneNumber"/></label><br>
+        <button type="button" onclick="createGuest()">Create Guest</button>
+    </form>
+
+    <form id="room-create">
+        <h1 id="room">Create room</h1>
+        <label>RoomNumber: <input type="text" id="room-roomNumber"/></label><br>
+        <label>NumberOfBeds: <input type="text" id="room-numberOfBeds"/></label><br>
+        <label>Price: <input type="text" id="room-price"/></label><br>
+        <label>isAvailable<input type="checkbox" id="room-isAvailable"/></label><br>
+        <label>Hotel :
+        <select id="hotel-dropdown"></select>
+        </label><br>
+        <button type="button" onclick="createRoom()">Create Room</button>
+    </form>
+
+</div>
+
+
+
+
+<h1 id="hotel-list-name">Hotel list</h1>
+<input type="text" id="searchHotel" placeholder="Search by product name" >
+<table id="hotelTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>Zip</th>
+        <th>Country</th>
+        <th>Room Amount</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="hotelList"></tbody>
+</table>
+
+<script src="../js/js2/hotel.js"></script>
+<script src="../js/js2/guest.js"></script>
+<script src="../js/js2/room.js"></script>
+</body>
+
+</html>
